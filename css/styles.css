@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -5,9 +8,21 @@
     padding: 0;
 
 }
-
+::-webkit-scrollbar{
+    background-color: #282b5c;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #01121b;
+    max-height: 10px;
+    border-radius: 50px;
+}
+#body-contato{
+    overflow: hidden;
+    background-color: white;
+}
 header {
-    
+    position: fixed;
     display: flex;
     top: 0;
     left: 0;
@@ -18,7 +33,9 @@ header {
     padding: 0.31rem 0.5%;
     background-color: #13072e;
 }
-
+section{
+    height: 620px;
+}
 
 #logo {
     max-width: 11.88rem;
@@ -59,9 +76,8 @@ header {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color: #0B2C35;
-    
     color: #FFF;
     margin: 0;
     padding: 0;
