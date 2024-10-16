@@ -1,65 +1,74 @@
-
-#contatoMain{
-    height: 45rem;
+#contatoMain {
+    height: 100%;
     width: 100%;
     display: flex;
     background-color: #edeef0;
 }
+
 #img-contato img {
-    width: 630px;
-    height: 700px;
+    width: 80vh; 
+    height: 91.5vh; 
 }
-#form-div{
+
+#form-div {
+    width: 100%;
+    margin-bottom: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-form{
-    width: 50%;
+
+form {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #0B2C35;
+
 }
-#texto-form{
+
+
+#texto-form {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0.5rem; 
+    margin-bottom: 1.5rem;
 }
 
-#campos input, select{
-    border-radius: 15px;
+#campos input, select {
+    border-radius: 1rem; 
     background-color: rgb(217, 223, 227);
-    width: 300px;
-    height: 30px;
+    width: 20rem; 
+    height: 3rem;
     border: none;
-    padding-left: 12px;
-    margin-bottom: 12px;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
     font-family: "DM Sans", sans-serif;
+}
 
+#label {
+    padding-left: 1rem; 
 }
- #label{
-    padding-left: 12px;
-    
-}
-textarea{
+
+textarea {
     background-color: rgb(217, 223, 227);
-    width: 300px;
-    height: 60px;
+    width: 20rem; 
+    height: 6rem;
     border: none;
 }
-#botao-form{
+
+#botao-form {
     background-color: #007bff;
     color: white;
-    width: 165px;
-    margin-top: 12px;
-    border-radius: 20px;
-    height: 35px;
+    width: 12rem; 
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    height: 3rem;
     border: none;
     font-family: "DM Sans", sans-serif;
 }
-#botao-form:hover{
+
+#botao-form:hover {
     cursor: pointer;
-    width: 167px;
-    height: 37px;
+    background-color: #0056b3;
 }
+
