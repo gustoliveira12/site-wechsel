@@ -66,9 +66,29 @@ section{
     border-radius: 1.25rem;
     color: #13072e;
     margin-right: 3.9rem;
+    text-decoration: none;
 }
 
 .navbar #contato-btn:hover {
+    background-color: #5ce1e6;
+    color: #13072e;
+    cursor: pointer;
+    
+}
+
+#contatar-btn {
+    
+    background-color: #bded33;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.25rem;
+    color: #13072e;
+    margin-right: 3.9rem;
+    margin-right: 3.9rem;
+    text-decoration: none;
+    
+}
+
+#contatar-btn:hover {
     background-color: #5ce1e6;
     color: #13072e;
     cursor: pointer;
@@ -82,6 +102,37 @@ body {
     padding: 0;
     font-size: 1rem; /* Define o tamanho base da fonte como 16px */
 }
+
+.inicio {
+    padding: 5rem 2rem;
+    text-align: left;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    
+}
+
+.inicio h2 {
+    color: #E7F521;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    
+}
+
+.homeContent p {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #D9D9D9;
+}
+
+.lineSection {
+    height: 2px; /* Espessura um pouco maior para dar destaque */
+    background: linear-gradient(to right, #2196F3, #21CBF3); /* Gradiente com um tom de azul */
+    border-radius: 5px; /* Arredonda as bordas para um visual mais suave */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    width: 100%;
+    margin: 30px 0; /* Espaçamento maior para destacar a linha */
+  }
+  
 
 .first-content, .second-content {
     background-color: #0B2C35;
@@ -130,13 +181,15 @@ body {
     background-color: #0B2C35; 
     padding: 4rem 2rem;
     text-align: left;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
 
 .services h2 {
     color: #E7F521;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    margin-left: 7rem;
+    
     
 }
 
@@ -145,8 +198,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2.5rem;
-    margin-left: 7rem;
-    margin-right: 8rem;
+    
+    
 }
 
 .service-item {
