@@ -23,6 +23,7 @@
 }
 header {
     display: flex;
+    position: fixed;
     top: 0;
     left: 0;
     flex-direction: row;
@@ -31,6 +32,7 @@ header {
     align-items: center;
     padding: 0.31rem 0.5%;
     background-color: #13072e;
+    z-index: 10;
 }
 section{
     height: 620px;
@@ -100,11 +102,63 @@ body {
     color: #FFF;
     margin: 0;
     padding: 0;
-    font-size: 1rem; /* Define o tamanho base da fonte como 16px */
+    font-size: 1rem; 
+    overflow-x: hidden;
 }
 
+    #carrossel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+  }
 
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 400vw; /* Define a largura do carrossel (4 imagens de 100vw) */
+  }
+  
+  .slide {
+    min-width: 100vw; /* Cada slide ocupa 100% da largura da viewport */
+    height: 100vh;
+    
+  }
 
+  .carousel-slide img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* Botões de navegação */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    right: 20px;
+  }
+  
 .lineSection {
     height: 2px; /* Espessura um pouco maior para dar destaque */
     background: linear-gradient(to right, #2196F3, #21CBF3); /* Gradiente com um tom de azul */
@@ -205,11 +259,12 @@ body {
     justify-content: space-between;
 }   */ 
 
-.service-item p {
+.service-item a {
     font-size: 1.2rem;
     padding: 0.5rem;
     color: #5ce1e6;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .service-item-image {
