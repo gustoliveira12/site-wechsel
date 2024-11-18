@@ -25,11 +25,23 @@
     </header>
 
     <main>
-      <section></section>
+      <section id="inicio"></section>
 
       <div class="lineSection"></div>
-
       <section id="sobreNos">
+      </section>
+
+      <section id="carrossel">
+        <div class="carousel-container">
+          <div class="carousel-slide" id="carouselSlide">
+            <img src="images/contato.jpg" alt="Imagem 1">
+            <img src="images/Manutenção civil.jpg" alt="Imagem 2">
+            <img src="images/contato.jpg" alt="Imagem 3">
+            <img src="images/Manutenção civil.jpg" alt="Imagem 4">
+          </div>
+          <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
       </section>
 
       <div class="lineSection"></div>
@@ -38,32 +50,32 @@
         <h2>Serviços</h2>
         <div class="services-container">
             <div class="service-item">
-                <p>manutenção de ar condicionado</p>
+                <a href="#">manutenção de ar condicionado</a>
                 <div class="service-item-image">
                     <img src="images/manutenção de ar condicionado.jpg" alt="Ar condicionado">
                 </div>
             </div>
             <div class="service-item">
-                <p>Manutenção elétrica</p>
+                <a href="manutencao_eletrica.html"> Manutenção elétrica</a>
                 <div class="service-item-image">
                     <img src="images/Manutenção elétrica.jpg" alt="Manutenção elétrica">
                 </div>
             </div>
             <div class="service-item">
-                <p>Manutenção hidráulica</p>
+                <a href="manutencao_hidra.html">Manutenção hidráulica</a>
                 <div class="service-item-image">
                     <img src="images/Manutenção hidráulica.jpg" alt="Manutenção hidráulica">
                 </div>
             </div>
             <div class="service-item">
-                <p>Manutenção civil</p>
+                <a href="manutencao_civil.html">Manutenção civil</a>
                 <div class="service-item-image">
                     <img src="images/Manutenção civil.jpg" alt="Manutenção civil">
                 </div>
             </div>
             <div class="service-item">
-                <p>Gestão Integrada de<br>
-                manutenção</p>
+                <a href="#">Gestão Integrada de<br>
+                manutenção</a>
                 <div class="service-item-image">
                     <img src="images/Gestão Integrada de manutenção.jpg" alt="Gestão Integrada de
                     manutenção">
@@ -77,6 +89,12 @@
       <section id="responsabilidade">
 
       </section>
+      <footer>
+        <div class="footer-bottom">
+          <p>Copyright ©2024 Wechsel</p>
+        </div>
+      </footer>
     </main>
+    <script src="script/script.js"></script>
   </body>
 </html>
