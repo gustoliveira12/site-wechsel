@@ -23,9 +23,11 @@
 }
 
 section{
-    height: 620px;
+    height: 32.29vw;
     scroll-margin-top: 70px;
 }
+
+
 header {
     display: flex;
     position: fixed;
@@ -150,99 +152,6 @@ body {
     font-size: 1rem; 
     overflow-x: hidden;
     padding-top: 80px;
-
-}
-
-    #carrossel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  .carousel-container {
-    position: relative;
-    width: 100vw;
-    height: 70vh;
-    overflow: hidden;
-  }
-
-  .carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 400vw; /* Define a largura do carrossel (4 imagens de 100vw) */
-  }
-  
-  .slide {
-    min-width: 100vw; /* Cada slide ocupa 100% da largura da viewport */
-    height: 100vh;
-    
-  }
-
-  .carousel-slide img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-
-  /* Botões de navegação */
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    transform: translateY(-50%);
-    border-radius: 50%;
-  }
-
-  .prev {
-    left: 20px;
-  }
-
-  .next {
-    right: 20px;
-  }
-  
-.lineSection {
-    height: 2px; /* Espessura um pouco maior para dar destaque */
-    background: linear-gradient(to right, #2196F3, #21CBF3); /* Gradiente com um tom de azul */
-    border-radius: 5px; /* Arredonda as bordas para um visual mais suave */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
-    width: 100%;
-    margin: 30px 0; /* Espaçamento maior para destacar a linha */
-  }
-  
-
-.first-content, .second-content {
-    background-color: #0B2C35;
-    padding: 10vh 5vw; /* Altura relativa ao viewport */
-    display: flex;
-    justify-content: left;
-}
-
-.second-content {
-    justify-content: right;
-}
-
-.content-wrapper {
-    max-width: 60rem; /* Tamanho máximo do conteúdo */
-    text-align: left;
-}
-
-.first-content h2, .second-content h2 {
-    color: #E7F521;
-    font-size: 2.5rem; /* Tamanho ajustável em rem */
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.first-content p, .second-content p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: #D9D9D9;
 }
 
 .cta-btn {
@@ -465,21 +374,62 @@ body {
     background-color: #0056b3;
 }
 
-footer{
+footer {
+    
+    bottom: 0;
+    left: 0;
+    height: 2.08vw;
+    margin-top: 15.63vw;
+    width: 100%;
+
+}
+
+.footer-bottom{
     background: #13072e;
-      height: auto;
-      padding-top: 40px;
-      text-align: center;
-      color: #fff;
-      padding: 20px 0;
-  }
-  
-  .footer-bottom{
-    background: #13072e;
-    padding: 20px 0;
+    padding: 1.04vw 0;
     text-align: center;
     color: white;
-  }
-  .footer-bottom p{
+    
+}
+.footer-bottom p{
     font-size: 1.1rem;
-  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    footer {
+        margin-top: 20vw;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    footer {
+        margin-top: 30vw;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        margin-top: 35vw;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    footer {
+        margin-top: 40vw;
+    }
+}
+
+
+@media (max-width: 479px) {
+    footer {
+        margin-top: 45vw;
+    }
+}
+
+@media (max-width: 1280px) {
+    footer {
+        margin-top: 35.63vw;
+    }
+}

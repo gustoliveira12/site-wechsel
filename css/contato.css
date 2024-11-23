@@ -1,8 +1,107 @@
 #contatoMain {
-    height: 50rem;
+    height: 100%;
     width: 100%;
     display: flex;
     background-color: #edeef0;
+    padding-top: 80px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.31rem 0.5%;
+    background-color: #13072e;
+    z-index: 10;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+#logo {
+    max-width: 11.88rem;
+    max-height: 7.50rem;
+    width: auto;
+    height: auto;
+    padding: 0.94rem;
+    margin-left: 3rem;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0.94rem;
+    position: relative; /* Necessário para o posicionamento do submenu */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #bded33;
+    transition: 0.3s all;
+}
+
+
+.submenu {
+    display: none; /* Submenu oculto por padrão */
+    position: absolute;
+    top: 100%; /* Coloca o submenu logo abaixo do item */
+    left: 50%; /* Posiciona o submenu no meio do botão */
+    transform: translateX(-50%); /* Ajusta o submenu para centralizar com o botão */
+    background-color: #13072e;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    min-width: 150px;
+    width: 200px;
+}
+
+.submenu li {
+    display: block;
+    
+}
+
+.submenu li a {
+    color: white;
+}
+
+
+
+/* Mostrar submenu ao passar o mouse sobre "Serviços" */
+#servicos-li:hover .submenu {
+    display: block;
+}
+
+/* Efeito de hover nos itens do menu */
+.navbar li a:hover {
+    color: #bded33;
+    transition: 0.3s all;
+}
+.navbar #contato-btn {
+    background-color: #bded33;
+    padding: 0.63rem;
+    border-radius: 1.25rem;
+    color: #13072e;
+    margin-right: 3.9rem;
+    text-decoration: none;
+}
+
+.navbar #contato-btn:hover {
+    background-color: #5ce1e6;
+    color: #13072e;
+    cursor: pointer;
+    
 }
 
 #img-contato img {
@@ -72,3 +171,18 @@ textarea {
     background-color: #0056b3;
 }
 
+footer {
+    height: 2.08vw;
+    width: 100%;
+}
+
+.footer-bottom{
+    background: #13072e;
+    padding: 1.04vw 0;
+    text-align: center;
+    color: white;
+    
+}
+.footer-bottom p{
+    font-size: 1.1rem;
+}

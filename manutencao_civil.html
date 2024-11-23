@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wechsel - Serviços</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div id="title">
-          <img src="images/LOGOTIPO_WECHSEL_NEGATIVO_1.png" id="logo" />
+            <img src="images/LOGOTIPO_WECHSEL_NEGATIVO_1.png" id="logo" />
         </div>
         <nav class="navbar">
             <ul>
                 <a href="index.html#inicio"><li>Início</li></a>
                 <a href="index.html#sobreNos"><li>Sobre Nós</li></a>
-                <a href="index.html#servicos"><li>Serviços</li></a>
+                
+                <li id="servicos-li">
+                    <a href="index.html#servicos" id="servicos-btn">Serviços</a>
+                    <ul class="submenu">
+                        <li><a href="manutencao_hidra.html">Manutenção hidráulica</a></li>
+                        <li><a href="manutencao_eletrica.html">Manutenção elétrica</a></li>
+                        <li><a href="manutencao_ar.html">Manutenção de ar condicionado</a></li>
+                        <li><a href="manutencao_civil.html">Manutenção civil</a></li>
+                        <li><a href="gestao_integrada.html">Gestão integrada da manutenção</a></li>
+                    </ul>
+                </li>
                 <a href="index.html#responsabilidade"><li>Responsabilidade Social</li></a>
-                <a href="index.html#contato.html" id="contato-btn"><li>Contato</li></a>
+                <a href="contato.html" id="contato-btn"><li>Contato</li></a>
             </ul>
         </nav>
-      </header>
+    </header>
     
     <section class="services_information">
         <div class="services_info">
@@ -62,5 +72,10 @@
         </div>
         
     </section>
+    <footer>
+        <div class="footer-bottom">
+          <p>Copyright ©2024 Wechsel</p>
+        </div>
+      </footer>
 </body>
 </html>
