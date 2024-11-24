@@ -331,9 +331,11 @@ body {
     
 }
 
+
+
 .service-item {
     
-    border-top: 0.25rem solid #5ce1e6;
+    border-top: 0.25rem solid #457779;
     border-top-right-radius: 3.5rem;
     width: 45%; 
     display: flex;
@@ -360,7 +362,7 @@ body {
 .service-item a {
     font-size: 1.2rem;
     padding: 0.5rem;
-    color: #5ce1e6;
+    color: #7bcbce;
     font-weight: bold;
     text-decoration: none;
 }
@@ -370,7 +372,7 @@ body {
     height: 6.25rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 0.438rem solid #5ce1e6;
+    border: 0.438rem solid #457779;
     
     
 }
@@ -526,3 +528,25 @@ footer{
   .footer-bottom p{
     font-size: 1.1rem;
   }
+
+  
+
+#responsabilidade {
+    background-color: #e5f4ff;
+    color: #01121b;
+}
+.carousel-item .imagemResp{
+   float: right;
+   height: 620px;
+   width: 40%;
+}
+
+.textoResp{
+    font-size: 25px;
+    max-width: 60%;
+    padding: 8vh;
+    float: left;
+}
+ .textoResp p {
+    margin-top: 3vh;
+}
