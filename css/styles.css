@@ -23,7 +23,7 @@
 }
 
 section{
-    height: 620px;
+    
     scroll-margin-top: 70px;
 }
 header {
@@ -97,12 +97,12 @@ header {
 
 
 
-/* Mostrar submenu ao passar o mouse sobre "Serviços" */
+
 #servicos-li:hover .submenu {
     display: block;
 }
 
-/* Efeito de hover nos itens do menu */
+
 .navbar li a:hover {
     color: #bded33;
     transition: 0.3s all;
@@ -156,6 +156,8 @@ body {
 #inicio {
     padding: 60px 70px 30px 70px;
     color: #ffffff;
+    margin-left: 1.5%;
+    margin-right: 2%
   }
 
   .inicio-h1-title {
@@ -199,6 +201,11 @@ body {
 #sobreNos {
     padding: 50px 70px 30px 70px;
     color: #ffffff;
+    text-align: right;
+    margin-left: 1.5%;
+    margin-right: 2%;    
+    margin-bottom: 2.5%
+    
   }
 
 .sobreNos-h1-title{
@@ -208,6 +215,7 @@ body {
     margin-bottom: 20px;
     font-size: 55px;
     max-width: 280px;
+    margin-left: auto;
 }
 
 .sobreNos-p-text{
@@ -217,7 +225,8 @@ body {
     margin-bottom: 30px;
     margin: 20px 0 30px;
     max-width: 800px;
-    text-align: justify;
+    text-align: right;
+    margin-left: auto;
 }
 
     #carrossel{
@@ -273,14 +282,6 @@ body {
     right: 20px;
   }
   
-.lineSection {
-    height: 2px; /* Espessura um pouco maior para dar destaque */
-    background: linear-gradient(to right, #2196F3, #21CBF3); /* Gradiente com um tom de azul */
-    border-radius: 5px; /* Arredonda as bordas para um visual mais suave */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
-    width: 100%;
-    margin: 30px 0; /* Espaçamento maior para destacar a linha */
-  }
   
 
 .first-content, .second-content {
