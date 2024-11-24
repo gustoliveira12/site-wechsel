@@ -99,12 +99,12 @@ header {
 
 
 
-/* Mostrar submenu ao passar o mouse sobre "Serviços" */
+
 #servicos-li:hover .submenu {
     display: block;
 }
 
-/* Efeito de hover nos itens do menu */
+
 .navbar li a:hover {
     color: #bded33;
     transition: 0.3s all;
@@ -124,6 +124,9 @@ header {
     cursor: pointer;
     
 }
+
+
+
 
 #contatar-btn {
     
